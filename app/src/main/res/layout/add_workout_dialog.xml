@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/workoutNameDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/workout_name"
+        android:inputType="textCapSentences"
+        android:maxLines="1"
+        android:background="@drawable/dialog_style"
+        android:textCursorDrawable="@drawable/cursor"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/setsDialog"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill"
+            android:layout_weight="1"
+            android:textSize="22sp"
+            android:background="@drawable/dialog_style"
+            android:drawableTop="@drawable/repeat"
+            android:drawablePadding="12dp"
+            android:drawableTint="@color/black"
+            android:gravity="center"
+            android:hint="@string/sets"
+            android:inputType="number"
+            android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/startingWeightDialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_scale"
+                android:drawablePadding="12dp"
+                android:background="@drawable/dialog_style"
+                android:inputType="number"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                android:hint="@string/starting_weight"
+                android:gravity="center"
+                android:padding="8dp" />
+
+
+            <EditText
+                android:id="@+id/expectedTimeDialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_timer"
+                android:drawablePadding="12dp"
+                android:hint="@string/expected_time"
+                android:background="@drawable/dialog_style"
+                android:inputType="number"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:layout_weight="1"
+                android:padding="8dp" />
+    </LinearLayout>
+</LinearLayout>

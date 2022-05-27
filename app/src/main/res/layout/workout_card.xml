@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardView"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:elevation="1dp"
+        android:background="@color/green_light"
+        >
+
+        <ImageButton
+            android:id="@+id/moveUp"
+            android:tint="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+            android:layout_margin="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/moveDown"
+            android:tint="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+            android:layout_margin="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ImageView
+            android:id="@+id/workoutIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@+id/workoutName"
+            app:layout_constraintBottom_toBottomOf="@+id/workoutName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/workoutName"/>
+
+
+        <TextView
+            android:id="@+id/workoutName"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_workout"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="22sp"
+            android:layout_marginTop="34dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/editBtn"
+            android:tint="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_edit_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/setsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sets"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="34dp"
+            app:layout_constraintTop_toBottomOf="@+id/workoutName"/>
+
+        <TextView
+            android:id="@+id/startingWeightLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/starting_weight"
+            app:layout_constraintBottom_toBottomOf="@+id/setsLabel"
+            app:layout_constraintStart_toEndOf="@+id/setsLabel"
+            app:layout_constraintEnd_toStartOf="@+id/expectedTimeLabel"
+            app:layout_constraintTop_toTopOf="@+id/setsLabel"/>
+
+        <TextView
+            android:id="@+id/expectedTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/expected_time"
+            app:layout_constraintBottom_toBottomOf="@+id/setsLabel"
+            app:layout_constraintStart_toEndOf="@+id/startingWeightLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/setsLabel"/>
+
+        <TextView
+            android:id="@+id/sets"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sets_number"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/setsLabel"
+            app:layout_constraintStart_toStartOf="@+id/setsLabel"
+            app:layout_constraintTop_toBottomOf="@+id/setsLabel"/>
+
+        <TextView
+            android:id="@+id/startingWeight"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="15kg"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/startingWeightLabel"
+            app:layout_constraintStart_toStartOf="@+id/startingWeightLabel"
+            app:layout_constraintTop_toBottomOf="@+id/startingWeightLabel"
+            />
+
+        <TextView
+            android:id="@+id/expectedTime"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="18sp"
+            android:text="6 min"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/expectedTimeLabel"
+            app:layout_constraintStart_toStartOf="@+id/expectedTimeLabel"
+            app:layout_constraintTop_toBottomOf="@+id/expectedTimeLabel" />
+
+        <ImageButton
+            android:id="@+id/deleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:tint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/expectedTime" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

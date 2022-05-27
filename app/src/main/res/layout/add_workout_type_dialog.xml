@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<EditText
+    android:id="@+id/newWorkoutType"
+    android:inputType="textCapSentences"
+    android:maxLines="1"
+    android:layout_margin="16dp"
+    android:textSize="24sp"
+    android:background="@drawable/dialog_style"
+    android:drawableStart="@drawable/ic_teg"
+    android:textCursorDrawable="@drawable/cursor"
+    android:drawableTint="@color/red"
+    android:drawablePadding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:hint="@string/workout_type" />
+</LinearLayout>

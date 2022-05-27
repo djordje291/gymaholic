@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Gymaholic</string>
+    <string name="activities">WORKOUTS</string>
+    <string name="dummy_workout">Dummy workout</string>
+    <string name="sets"><font size="12">Sets</font></string>
+    <string name="expected_time"><font size="12">Expected\ntime</font></string>
+    <string name="starting_weight"><font size="12">Starting\nweight</font></string>
+    <string name="sets_number">4</string>
+    <string name="workout_type">Workout Type</string>
+    <string name="workout_name">Workout name</string>
+    <string name="min">min</string>
+    <string name="kg">kg</string>
+    <string name="share_workout">Share Workout</string>
+    <string name="add_some_workout_types">Add some workouts</string>
+    <string name="add_some_workouts">Add some exercises</string>
+    <string name="total_workout_time">Total expected time of workout:</string>
+</resources>
