@@ -33,7 +33,6 @@ public abstract class WorkoutRoomDatabase extends RoomDatabase {
         return INSTANCE;
     }
 
-    //da popunis db na pocetku, ne treba ti sem za testiranje
 //    private static RoomDatabase.Callback roomDatabaseCallback = new RoomDatabase.Callback() {
 //
 //        @Override

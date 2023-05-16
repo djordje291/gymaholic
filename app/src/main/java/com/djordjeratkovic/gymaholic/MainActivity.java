@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
     private FloatingActionButton fab;
     private TextView emptyGreet;
 
-    //db da dobijes koliko dana
     private WorkoutViewModel workoutViewModel;
 
     private List<WorkoutType> workoutTypesList = new ArrayList<>();

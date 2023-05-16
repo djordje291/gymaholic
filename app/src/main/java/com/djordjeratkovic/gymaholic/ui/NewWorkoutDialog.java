@@ -43,7 +43,6 @@ public class NewWorkoutDialog extends DialogFragment {
         this.order = order;
         wt = null;
     }
-    //TODO: poboljsaj dijaloge sve
 
     @NonNull
     @Override
@@ -67,7 +66,6 @@ public class NewWorkoutDialog extends DialogFragment {
                         public void onClick(DialogInterface dialog, int which) {
                             if (!TextUtils.isEmpty(name.getText().toString().trim()) && !TextUtils.isEmpty(sets.getText().toString().trim())
                                     && !TextUtils.isEmpty(weight.getText().toString().trim()) && !TextUtils.isEmpty(time.getText().toString().trim())) {
-                                // moze sve
                                 workoutViewModel = ViewModelProviders.of(getActivity()).get(WorkoutViewModel.class);
                                 Workout workout = new Workout(name.getText().toString().trim(), Integer.parseInt(sets.getText().toString().trim()),
                                         Integer.parseInt(weight.getText().toString().trim()), Integer.parseInt(time.getText().toString().trim()), type, order);
